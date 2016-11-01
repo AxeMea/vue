@@ -46,7 +46,7 @@ export default function (Vue) {
         }
         handler = (vm._scope || vm._context).$eval(value, true)
         handler._fromParent = true
-        vm.$on(name.replace(eventRE), handler)
+        vm.$on(name, handler)
       }
     }
   }
